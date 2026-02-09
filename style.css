@@ -1,0 +1,144 @@
+#parent{
+    background-color: beige;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        'header header'
+        'navigation content'
+        'footer footer';
+}
+
+#header{
+    grid-area: header;
+    background-color: black ;
+    color: beige;
+    text-align: center;
+}
+
+#navigation{
+    grid-area: navigation;
+    background-color: brown;
+    border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#content{
+    grid-area: content;
+    background-color: azure;
+    text-align: center;
+  
+}
+
+#footer{
+    grid-area: footer;
+    background-color: black;
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+
+#parent {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 70px 1fr 60px;
+  grid-template-areas:
+    "header header"
+    "navigation content"
+    "footer footer";
+}
+
+
+#header {
+  grid-area: header;
+  background-color: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#navigation {
+  grid-area: navigation;
+  background-color: #333;
+  padding: 15px;
+}
+
+#navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#navigation a:hover {
+  background-color: #555;
+}
+
+
+#content {
+  grid-area: content;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+#content h3 {
+  margin-bottom: 15px;
+}
+
+
+input, select {
+  width: 60%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+
+button {
+  padding: 10px 25px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+
+#footer {
+  grid-area: footer;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
